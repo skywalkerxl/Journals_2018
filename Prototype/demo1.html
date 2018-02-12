@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo1</title>
+</head>
+<body>
+
+<script>
+    function Person(name, age){
+        this.name = name;
+        this.age = age;
+
+        this.getInfo = function(){
+            console.log("name: " + this.name + " age: " + this.age);
+        }
+    }
+
+    var will = new Person("Ahalimu", '17');
+    console.log(will)
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Create</title>
+</head>
+<body>
+
+<script>
+    let anotherObject = {
+        a: 2
+    }
+
+    let myObject = Object.create(anotherObject);
+    // Object.create(...) 会创建一个对象，并把这个对象的[[Prototype]]关联到这个对象
+
+    anotherObject.hasOwnProperty("a"); // true
+    myObject.hasOwnProperty("a"); // false
+
+    myObject.a ++; // 3, 隐式屏蔽
+    myObject.hasOwnProperty("a"); // true, 这个地方myObejct拥有了自己的属性a
+
+    console.log(myObject.a);
+
+</script>
+</body>
+</html>
