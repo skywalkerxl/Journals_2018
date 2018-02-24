@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6个正则方法</title>
+</head>
+<body>
+
+<script>
+
+    /***
+     * js中正则类RegExp的两个方法
+     *
+     * exec()
+     对象	 属性/索引	    描述	                                    例子
+     result	 [0]	        匹配的全部字符串	                        Quick Brown Fox Jumps
+             [1], ...[n]    括号中的分组捕获	                        [1] = Brown
+             [2] = Jumps
+             index	        匹配到的字符位于原始字符串的基于0的索引值	4
+             input	        原始字符串	                            The Quick Brown Fox Jumps Over The Lazy Dog
+     *
+     *
+     * test()
+       返回true 或 false
+     *
+     *
+     * /
+
+
+
+    /* *
+    *
+    * ****************** 常用特殊字符******************
+    *
+    * 匹配量： * + ? {n} {n,} {n,m}
+    *
+    * 匹配位置的: ^ $
+    *
+    * 匹配并且需要支持分组的时候需要括号来概括: (匹配的模式)
+    *
+    * 匹配条件的: |
+    *
+    * 匹配集合的: []
+    *
+    * 匹配非集合的: [^]
+    *
+    * */
+
+    var myRe = /d(b+)d/g;
+    console.log(myRe.exec('cdbbdbsdbdbz'));  // ['dbbd', 'bb', index: 1, input: 'cdbbdbsdbdbz' ]
+    console.log(myRe.exec('cdbbdbsdbdbz'));  // ['dbd', 'b', index: 7, input: 'cdbbdbsdbdbz']
+    console.log(myRe.exec('cdbbdbsdbdbz'));  // null
+</script>
+</body>
+</html>

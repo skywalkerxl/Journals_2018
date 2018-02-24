@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无缝滚动</title>
+    <style>
+        html, body {
+            margin: 0; padding: 0;
+        }
+        .wrap {
+            position: relative;
+            height: 4rem;
+            overflow: hidden;
+        }
+        .list {
+            position: absolute;
+            width: 60rem; margin: 0; padding: 0; left: -20rem;
+        }
+        .list li {
+            float: right;
+            width: 15rem; height: 4rem; margin: 0; padding: 0;
+            list-style: none;
+        }
+
+        li:nth-child(1) {
+            background: antiquewhite;
+        }
+        li:nth-child(2) {
+            background: aqua;
+        }
+        li:nth-child(3) {
+            background: cadetblue;
+        }
+        li:nth-child(4) {
+            background: cornflowerblue;
+        }
+        .clear:after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+    </style>
+    <script>
+        var html = document.documentElement;
+        html.style.fontSize = html.clientWidth / 15 + 'px';
+    </script>
+</head>
+<body>
+<section class="wrap">
+    <ul class="list clear">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <nav>
+        <a href="javascript:;" class="active"></a>
+        <a href="javascript:;" class="active"></a>
+        <a href="javascript:;" class="active"></a>
+        <a href="javascript:;" class="active"></a>
+    </nav>
+</section>
+<script>
+    
+</script>
+</body>
+</html>
