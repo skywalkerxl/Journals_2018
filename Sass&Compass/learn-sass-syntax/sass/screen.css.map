@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA;;;yGAGyG;AACzG,YAAY;AAGZ,aAIC;EADC,WAAW,ECVC,iDAAiD;ADa/D,SAAU;EACR,WAAW,ECbC,qCAAqC",
+"sources": ["screen.scss","_variables.scss"],
+"names": [],
+"file": "screen.css"
+}
