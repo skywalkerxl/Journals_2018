@@ -1,4 +1,5 @@
-require 'compass/import-once/activate'
+require 'compass/import-once/activate' # import-once 解决了多次引入的样式冗余问题
+require 'compass-normalize'
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
@@ -10,7 +11,8 @@ javascripts_dir = "javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
- output_style = :compact  # 行模式
+output_style = :expanded
+# output_style = :compact  # 行模式
 # output_style = :compressed  # 上线前的css模式,压缩模式
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
