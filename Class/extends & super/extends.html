@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>extends</title>
 </head>
 <body>
-$END$
+
+<script>
+    // ES6 写法
+    class Foo {
+        constructor(x ,y){
+            this.x = x;
+            this.y = y;
+        }
+
+        getString(){
+            return this.x + this.y;
+        }
+    }
+
+    // ES5 写法
+    function Bar(x ,y) {
+        this.x = x;
+        this.y = y;
+    }
+    Bar.prototype.getString = function () {
+        return this.x + this.y;
+    }
+
+
+    var foo = new Foo(1, 2);
+    var bar = new Bar(2, 3);
+    console.log(foo.getString());  // 3
+    console.log(bar.getString());
+
+    class Foo_son extends Foo {
+        constructor(x, y, z){
+            super(x, y);  // 在构造器中，这里super会指向 "父构造器"
+            this.z = z;
+        }
+
+        getString(){
+            return super.getString() * this.z // 而在方法中，这里的super会指向 " 父对象 "
+        }
+    }
+
+    var foo_son = new Foo_son(1, 2, 3);
+    console.log(foo_son.getString());
+</script>
 </body>
 </html>

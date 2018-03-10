@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>修正this</title>
 </head>
 <body>
-$END$
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<script>
+    // 未修正this， this指向window
+
+    // var getId = document.getElementById;
+    // var div1 = getId("div1");
+    // console.log(div.id); // Illegal invocation
+
+    // 修改this绑定
+    document.getElementById = (function (func) {
+        return function () {
+            return func.apply(document, arguments);
+        }
+    })(document.getElementById);
+
+    var getId_modified = document.getElementById;
+    var div2 = getId_modified("div2");
+    console.log(div2.id);  // div2
+
+
+    var div3 = document.getElementById("div3");
+    console.log(div3.id);
+</script>
 </body>
 </html>
