@@ -1,0 +1,4 @@
+D:\MyRepository\Journals_2018\DesignPattern\Decorator\Basic Code\Basic Code\bin\Debug\Basic Code.exe
+D:\MyRepository\Journals_2018\DesignPattern\Decorator\Basic Code\Basic Code\bin\Debug\Basic Code.pdb
+D:\MyRepository\Journals_2018\DesignPattern\Decorator\Basic Code\Basic Code\obj\Debug\Basic Code.exe
+D:\MyRepository\Journals_2018\DesignPattern\Decorator\Basic Code\Basic Code\obj\Debug\Basic Code.pdb
