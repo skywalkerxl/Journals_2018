@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模拟传统面向对象语言的装饰者模式</title>
+</head>
+<body>
+<script>
+    var Plane = function (plane) {
+        this.plane = plane;
+    }
+    Plane.prototype.fire = function () {
+        console.log("发射普通子弹");
+    }
+
+    // “导弹”装饰类
+    var MissleDecorator = function (plane) {
+        this.plane = plane;
+    }
+    MissleDecorator.prototype.fire = function () {
+        console.log("发射导弹");
+    }
+
+    // “原子弹”装饰类
+    var AtomDecorator = function (plane) {
+        this.plane = plane;
+    }
+    AtomDecorator.prototype.fire = function () {
+        console.log("发射原子弹");
+    }
+
+    var plane = new Plane();
+    plane = new MissleDecorator( plane );
+    plane = new AtomDecorator( plane );
+
+    plane.fire();
+</script>
+</body>
+</html>
