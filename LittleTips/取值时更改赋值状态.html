@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>取值时更改赋值状态</title>
+</head>
+<body>
+<script>
+    let obj = {
+        get a(){
+            return this._a_ ++;
+        },
+
+        set a(val){
+            this._a_ = val
+        }
+    }
+
+    obj.a = 4;
+
+    console.log( obj.a < 5 && obj.a ==5 && obj.a > 5 );
+</script>
+</body>
+</html>

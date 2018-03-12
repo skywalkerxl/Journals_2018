@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基于原型</title>
+</head>
+<body>
+<script>
+    String.prototype.valueOf = function () {
+        if( !String.prototype.mytext) {
+            String.prototype.mytext = 'mytest';
+            return 4
+        }else {
+            return 6;
+        }
+    };
+
+    var a = new String('4');
+    a < 5 && a > 5 ? console.log(true) : console.log(false)
+</script>
+</body>
+</html>
