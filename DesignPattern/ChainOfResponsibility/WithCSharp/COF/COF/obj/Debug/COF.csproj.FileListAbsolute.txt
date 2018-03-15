@@ -1,0 +1,5 @@
+D:\MyRepository\Journals_2018\DesignPattern\ChainOfResponsibility\WithCSharp\COF\COF\bin\Debug\COF.exe
+D:\MyRepository\Journals_2018\DesignPattern\ChainOfResponsibility\WithCSharp\COF\COF\bin\Debug\COF.pdb
+D:\MyRepository\Journals_2018\DesignPattern\ChainOfResponsibility\WithCSharp\COF\COF\obj\Debug\COF.csprojResolveAssemblyReference.cache
+D:\MyRepository\Journals_2018\DesignPattern\ChainOfResponsibility\WithCSharp\COF\COF\obj\Debug\COF.exe
+D:\MyRepository\Journals_2018\DesignPattern\ChainOfResponsibility\WithCSharp\COF\COF\obj\Debug\COF.pdb

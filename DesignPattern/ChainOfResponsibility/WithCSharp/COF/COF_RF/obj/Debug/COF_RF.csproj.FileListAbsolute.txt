@@ -1,0 +1,4 @@
+D:\MyRepository\Journals_2018\DesignPattern\ChainOfResponsibility\WithCSharp\COF\COF_RF\bin\Debug\COF_RF.exe
+D:\MyRepository\Journals_2018\DesignPattern\ChainOfResponsibility\WithCSharp\COF\COF_RF\bin\Debug\COF_RF.pdb
+D:\MyRepository\Journals_2018\DesignPattern\ChainOfResponsibility\WithCSharp\COF\COF_RF\obj\Debug\COF_RF.exe
+D:\MyRepository\Journals_2018\DesignPattern\ChainOfResponsibility\WithCSharp\COF\COF_RF\obj\Debug\COF_RF.pdb
